@@ -10,6 +10,7 @@ const asyncHandler = require("express-async-handler")
 connectDb()
 
 var users = require('./routes/users');
+var appData = require('./routes/appData')
 
 var app = express();
 
@@ -25,5 +26,6 @@ app.use(cookieParser())
 app.use('/api/connect', connected)
 
 app.use('/api/users', users);
+app.use('/api/appdata', appData)
 
 module.exports = app;
