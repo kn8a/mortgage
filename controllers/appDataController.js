@@ -13,7 +13,7 @@ const getAppData = asyncHandler(async(req,res)=> {
         return
     }
     console.log(rates)
-    //res.status(200).json({rates: rates})
+    res.status(200).json({rates: rates})
 })
 
 module.exports = { getAppData }
