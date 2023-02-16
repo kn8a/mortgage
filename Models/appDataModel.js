@@ -7,6 +7,9 @@ const appDataSchema = new mongoose.Schema({
   fha_rates: {
     type: Object
   },
+  parameters: {
+    type: Object
+  }
   });
 
   module.exports = mongoose.model("AppData", appDataSchema)
